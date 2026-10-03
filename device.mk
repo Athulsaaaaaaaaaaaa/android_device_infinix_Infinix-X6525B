@@ -22,11 +22,11 @@ PRODUCT_PACKAGES += \
     bootctrl.mt6765
 
 ######### nonsense #########
- PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.mt6765 \
-    libgptutils \
-    libz \
-    libcutils
+ #PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+    #bootctrl.mt6765 \
+    #libgptutils \
+   # libz \
+    #libcutils
 ####################################
 PRODUCT_PACKAGES += \
     otapreopt_script \
