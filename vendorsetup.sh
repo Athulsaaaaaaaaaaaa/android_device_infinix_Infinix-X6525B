@@ -1,10 +1,7 @@
-#
-# Copyright (C) 2026 The Android Open Source Project
-# Copyright (C) 2026 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
+add_lunch_combo twrp_Infinix-X6525B-user
+add_lunch_combo twrp_Infinix-X6525B-userdebug
+add_lunch_combo twrp_Infinix-X6525B-eng
 
-add_lunch_combo omni_Infinix-X6525B-user
-add_lunch_combo omni_Infinix-X6525B-userdebug
-add_lunch_combo omni_Infinix-X6525B-eng
+export OF_MAINTAINER="reixz21"
+export FOX_MAINTAINER_PATCH_VERSION="1"
+export FOX_VARIANT="Unofficial"
