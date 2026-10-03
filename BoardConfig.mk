@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/infinix/Infinix-X6525B
+DEVICE_PATH := device/infinix/X6525B
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -36,7 +36,7 @@ TARGET_USES_64_BIT_BINDER := true
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := Infinix-X6525B
+TARGET_BOOTLOADER_BOARD_NAME := X6525B,Infinix-X6525B
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -54,8 +54,8 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_KERNEL_CONFIG := Infinix-X6525B_defconfig
-TARGET_KERNEL_SOURCE := kernel/infinix/Infinix-X6525B
+TARGET_KERNEL_CONFIG := X6525B_defconfig
+TARGET_KERNEL_SOURCE := kernel/infinix/X6525B
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -107,3 +107,6 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_INCLUDE_REPACKTOOLS := true
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_DEFAULT_BRIGHTNESS := 1200
+TW_MAX_BRIGHTNESS := 2047
