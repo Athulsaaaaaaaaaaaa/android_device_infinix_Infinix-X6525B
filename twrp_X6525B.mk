@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from Infinix-X6525B device
-$(call inherit-product, device/infinix/Infinix-X6525B/device.mk)
+$(call inherit-product, device/infinix/X6525B/device.mk)
 
-PRODUCT_DEVICE := Infinix-X6525B
-PRODUCT_NAME := twrp_Infinix-X6525B
+PRODUCT_DEVICE := X6525B
+PRODUCT_NAME := twrp_X6525B
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix X6525B
 PRODUCT_MANUFACTURER := infinix
@@ -25,4 +25,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-infinix
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="vnd_x6525b_v659-user 12 SP1A.210812.016 563993 release-keys"
 
-BUILD_FINGERPRINT := Infinix/X6525B-OP/Infinix-X6525B:12/SP1A.210812.016/240316V843:user/release-keys
+BUILD_FINGERPRINT := Infinix/X6525B-OP/X6525B:12/SP1A.210812.016/240316V843:user/release-keys
